@@ -8,7 +8,7 @@ def number(num):
     return sum;  
 
           
-print("List of happy numbers between 1 and 100: ");  
+print("Equal to the square of sum: ");  
 for i in range(1, 101):  
     result = i;  
       
