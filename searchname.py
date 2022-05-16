@@ -1,12 +1,11 @@
+import re
+
 def searchname():
   infile = open("names.txt", "r")
-  for name in infile.readlines():
-    if name.startswith("A"):
-      print(name)
-    
+  return ([word for word in infile.split() if (word.startswith('A')
+    print(word)
   
-def searchname():
-  infile = open("names.txt", "r")
-  for line in infile.readlines():
-    if name.startswith("A"):
-      print(name[:-1])    
+# def searchname():
+#   infile = open("names.txt", "r")
+#   for line in infile.readlines():
+#     print(name[:-1])    
