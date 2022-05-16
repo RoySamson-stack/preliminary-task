@@ -2,8 +2,8 @@ import re
 
 def searchname():
   infile = open("names.txt", "r")
-  return ([word for word in infile.split() if (word.startswith('A')
-    print(word)
+  return ([word for word in infile.split() if (word.startswith('A'))])
+  print(word)
   
 # def searchname():
 #   infile = open("names.txt", "r")
