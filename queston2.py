@@ -9,13 +9,14 @@ def searchname(fn):
 searchname("names.txt")
 
 # #user enter the first name
-def searchname(fn):
+def searchname_input(fn):
     name= []
     name_letter = input("Enter a the first letter of the name: ")
     name_a = [element for element in open(fn, 'r') if element.startswith(name_letter)]
-    name.append(name_letter)
+    name.append(str(name_letter))
     print(name)
-searchname("names.txt")
+searchname_input("names.txt")
+#if the program stops at the enter you first name kindly comment it out 
 
 #searching age of the person
 def searchage(fn):
