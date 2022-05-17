@@ -37,3 +37,15 @@ def searchage(fn):
             age.append(words)
     print(age)
 searchage("names.txt")   
+
+#main funtion
+def main():
+    ans = input("Kindly choose 1 to seach name and 2 to search by age:")
+    if ans == "1":
+        searchname("names.txt")
+    elif ans == "2":
+        searchname("names.txt") 
+    else:
+        print("You entered an invalid option")
+        raise SystemExit
+    
