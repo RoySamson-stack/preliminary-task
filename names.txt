@@ -1,17 +1,17 @@
 Alfred 5
- Abdul 5
- Eliza 11 
+Abdul 5
+Eliza 11 
 Harun 8 
 Rama 9 
 Fatma 11 
 Martin 12
- Nuray 7 
+Nuray 7 
 Mustafa 7
- Nazan 7
-  Yasin 13 
- Susan 8 
- Tabitha 12 
- Omar 5 
+Nazan 7
+Yasin 13 
+Susan 8 
+Tabitha 12 
+Omar 5 
 Unat 11 
 Veli
 10 

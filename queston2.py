@@ -1,40 +1,39 @@
 import re
 
-def searchname():
-    infile = open("names.txt", "r")
-    for s in infile:
-        if re.search(r'\b[A]\w+', s):
-            print(s)
-    
-def search_name_from_user():
-    infile = open("names.txt", "r")
-    user_input = str(input('Enter the letter that you want the name to start with: '))
-    result =  [name for name in infile if name.startswith((user_input))]
-    print(result)
+# #names starting with an A
+def searchname(fn):
+    name= []
+    name_a = [element for element in open(fn, 'r') if element.startswith("A")]
+    name.append(name_a)
+    print(mylist)
+searchname("names.txt")
 
-def searchage():
-    infile = open("names.txt", "r")
-    for s in infile:
-        if re.search('[5]', s):
-            print(s)
+# #user enter the first name
+def searchname(fn):
+    name= []
+    name_letter = input("Enter a the first letter of the name: ")
+    name_a = [element for element in open(fn, 'r') if element.startswith(name_letter)]
+    name.append(name_a)
+    print(mylist)
+searchname("names.txt")
 
-def searchage_user():
-    infile = open("names.txt", "r")
-    user_input_age = int(input('Enter the age at which you want to search the users with: '))
-    for s in infile:
-        if re.search(rf'[{user_input_age}]', s):
-            print(s)
+#searching age of the person
+def searchage(fn):
+    age = []
+    for line in open(fn, 'r'):
+        if re.search(str(5), line):
+            words=line.split()
+            age.append(words)
+    print(age)
+searchage("names.txt")   
 
-if __name__ == "__main__":
-    user_choice = input("enter a choice you would like: ")
-    if user_choice == '1':
-        print(search_name_from_user())
-    elif user_choice == '2':
-        print(searchage_user)
-    elif user_choice == '3':
-        searchname()
-    elif user_choice == '4':
-        searchage()
-    else:
-        print('Select an input between 1 and 2 for searching through \n file for name or age')
-    
+#searchingthe age of the person using user input 
+def searchage(fn):
+    age = []
+    age_enter = input("Enter the age:")
+    for line in open(fn, 'r'):
+        if re.search(str(age_enter), line):
+            words=line.split()
+            age.append(words)
+    print(age)
+searchage("names.txt")   
